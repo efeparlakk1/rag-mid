@@ -1,0 +1,50 @@
+# ── Veri kaynakları (içerik repoya girmez, klasör .gitkeep ile korunur) ──
+# config.py açılışta klasörü zaten oluşturur.
+data/*
+!data/.gitkeep
+GUIDE.md
+
+# ── Vektör deposu (içerik girmez, klasör .gitkeep ile korunur) ──────────
+storage/qdrant/*
+!storage/qdrant/.gitkeep
+embedding_cache/
+
+# ── Sanal ortam ─────────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+
+# ── Python derleme/önbellek artıkları ───────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ── Model / kütüphane önbellekleri ──────────────────────────────────────
+.cache/
+*.gguf
+*.safetensors
+*.bin
+
+# ── Ortam değişkenleri / sırlar ─────────────────────────────────────────
+.env
+.env.*
+*.key
+
+# ── Loglar ──────────────────────────────────────────────────────────────
+*.log
+
+# ── Editör / IDE / OS ───────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ── Claude Code ayarları (repoya girmez) ────────────────────────────────
+.claude/
